@@ -1,0 +1,550 @@
+{
+  "contractName": "StoreLib",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820da237539a11b6dcc1d6163c0e5ff7f4962b4b2d871f27c2fe0b00dc3b8206ecf0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820da237539a11b6dcc1d6163c0e5ff7f4962b4b2d871f27c2fe0b00dc3b8206ecf0029",
+  "sourceMap": "26:272:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:272:1:-;;;;;",
+  "source": "pragma solidity ^0.4.17;\n\nlibrary StoreLib{\n    enum ProductStatus { Available, Sold, OutOfStock }\n    struct Product {\n        string name;\n        string category;\n        string imageLink;\n        string descLink;\n        uint price;\n        address seller;\n        ProductStatus status;\n    }\n}\n",
+  "sourcePath": "/Users/Snor/Documents/Ngoc Dung/go/hw2/contracts/StoreLib.sol",
+  "ast": {
+    "absolutePath": "/Users/Snor/Documents/Ngoc Dung/go/hw2/contracts/StoreLib.sol",
+    "exportedSymbols": {
+      "StoreLib": [
+        452
+      ]
+    },
+    "id": 453,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 432,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 452,
+        "linearizedBaseContracts": [
+          452
+        ],
+        "name": "StoreLib",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "StoreLib.ProductStatus",
+            "id": 436,
+            "members": [
+              {
+                "id": 433,
+                "name": "Available",
+                "nodeType": "EnumValue",
+                "src": "69:9:1"
+              },
+              {
+                "id": 434,
+                "name": "Sold",
+                "nodeType": "EnumValue",
+                "src": "80:4:1"
+              },
+              {
+                "id": 435,
+                "name": "OutOfStock",
+                "nodeType": "EnumValue",
+                "src": "86:10:1"
+              }
+            ],
+            "name": "ProductStatus",
+            "nodeType": "EnumDefinition",
+            "src": "48:50:1"
+          },
+          {
+            "canonicalName": "StoreLib.Product",
+            "id": 451,
+            "members": [
+              {
+                "constant": false,
+                "id": 438,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "128:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 437,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 440,
+                "name": "category",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "149:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 439,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "149:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 442,
+                "name": "imageLink",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "174:16:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 441,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "174:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 444,
+                "name": "descLink",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "200:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 443,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "200:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 446,
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "225:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 445,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "225:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 448,
+                "name": "seller",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "245:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 447,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "245:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 450,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "269:20:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_ProductStatus_$436",
+                  "typeString": "enum StoreLib.ProductStatus"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 449,
+                  "name": "ProductStatus",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 436,
+                  "src": "269:13:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_ProductStatus_$436",
+                    "typeString": "enum StoreLib.ProductStatus"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Product",
+            "nodeType": "StructDefinition",
+            "scope": 452,
+            "src": "103:193:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 453,
+        "src": "26:272:1"
+      }
+    ],
+    "src": "0:299:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/Snor/Documents/Ngoc Dung/go/hw2/contracts/StoreLib.sol",
+    "exportedSymbols": {
+      "StoreLib": [
+        452
+      ]
+    },
+    "id": 453,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 432,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 452,
+        "linearizedBaseContracts": [
+          452
+        ],
+        "name": "StoreLib",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "StoreLib.ProductStatus",
+            "id": 436,
+            "members": [
+              {
+                "id": 433,
+                "name": "Available",
+                "nodeType": "EnumValue",
+                "src": "69:9:1"
+              },
+              {
+                "id": 434,
+                "name": "Sold",
+                "nodeType": "EnumValue",
+                "src": "80:4:1"
+              },
+              {
+                "id": 435,
+                "name": "OutOfStock",
+                "nodeType": "EnumValue",
+                "src": "86:10:1"
+              }
+            ],
+            "name": "ProductStatus",
+            "nodeType": "EnumDefinition",
+            "src": "48:50:1"
+          },
+          {
+            "canonicalName": "StoreLib.Product",
+            "id": 451,
+            "members": [
+              {
+                "constant": false,
+                "id": 438,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "128:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 437,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 440,
+                "name": "category",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "149:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 439,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "149:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 442,
+                "name": "imageLink",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "174:16:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 441,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "174:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 444,
+                "name": "descLink",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "200:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 443,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "200:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 446,
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "225:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 445,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "225:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 448,
+                "name": "seller",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "245:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 447,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "245:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 450,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "scope": 451,
+                "src": "269:20:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_ProductStatus_$436",
+                  "typeString": "enum StoreLib.ProductStatus"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 449,
+                  "name": "ProductStatus",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 436,
+                  "src": "269:13:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_ProductStatus_$436",
+                    "typeString": "enum StoreLib.ProductStatus"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Product",
+            "nodeType": "StructDefinition",
+            "scope": 452,
+            "src": "103:193:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 453,
+        "src": "26:272:1"
+      }
+    ],
+    "src": "0:299:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {
+    "4447": {
+      "events": {},
+      "links": {},
+      "address": "0x4a5cd58b24e3bf04360b06bfeaf45a39aa8035b6",
+      "transactionHash": "0xa0eb5d5b2cab40cac1a3799e2ad185fd9b8e1ab3ac1849b656c3292c2af70a8b"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-03-25T14:25:04.161Z"
+}

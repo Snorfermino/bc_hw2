@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Product</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="./app.js"></script>
+    </head>
+
+    <body>
+                <form id="add-product-form">
+                        <div class="form-group">
+                            <label for="product-name">Product Name</label>
+                            <input type="text" class="form-control" id="product-name" placeholder="Enter name">
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="product-category">Product Category</label>
+                            <input type="text" class="form-control" id="product-category" placeholder="Category">
+                        </div>
+                        <div class="form-group">
+                                <label for="product-desc">Product Description</label>
+                                <input type="text" class="form-control" id="product-desc" placeholder="Description">
+                        </div>
+                        <div class="form-group">
+                                <label for="product-price">Product Price</label>
+                                <input type="text" class="form-control" id="product-price" placeholder="Price">
+                        </div> -->
+                        <div class="form-group">
+                                <label for="product-image" class="control-label">Upload product photo</label>
+                                <div>
+                                    <input type="file" name="product-image" class="form-control" id="product-image" placeholder="Password">
+                                </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+    </body>
+</html>
